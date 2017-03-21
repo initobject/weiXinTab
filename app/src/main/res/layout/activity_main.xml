@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="#393A3F"
+        app:title="@string/app_name"
+        app:titleTextColor="@android:color/white" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#abc" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e7f7f4f4"
+        android:orientation="horizontal">
+
+        <com.czy.weixintab.ShadeTabView
+            android:id="@+id/stv_weiXin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:normalIcon="@drawable/tab_weixin"
+            app:selectIcon="@drawable/tab_weixin_select"
+            app:tab="微信" />
+
+        <com.czy.weixintab.ShadeTabView
+            android:id="@+id/stv_address_book"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:normalIcon="@drawable/tab_address_list"
+            app:selectIcon="@drawable/tab_address_list_select"
+            app:tab="通讯录" />
+
+        <com.czy.weixintab.ShadeTabView
+            android:id="@+id/stv_discover"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:normalIcon="@drawable/tab_discover"
+            app:selectIcon="@drawable/tab_discover_select"
+            app:tab="发现" />
+
+        <com.czy.weixintab.ShadeTabView
+            android:id="@+id/stv_me"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:normalIcon="@drawable/tab_me"
+            app:selectIcon="@drawable/tab_me_select"
+            app:tab="我" />
+
+    </LinearLayout>
+
+</LinearLayout>
