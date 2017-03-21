@@ -4,4 +4,4 @@
 
 ![](https://github.com/initobject/weiXinTab/blob/master/1.gif)
 
-具体介绍可以看我的文章：http://www.jianshu.com/p/dcf55094bbbb
+具体介绍可以看我的文章：http://blog.csdn.net/new_one_object/article/details/64443019
